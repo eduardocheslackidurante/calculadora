@@ -9,7 +9,7 @@ function clean()
     document.getElementById('resultado').innerHTML = ""
 }
 
-function calcular ()
+function calcular()
 {
     let resultado = document.getElementById('resultado').innerHTML;
     if (resultado)
