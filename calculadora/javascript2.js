@@ -1,6 +1,5 @@
 "use strict";
 
-// Adiciona os listeners após o carregamento do DOM
 document.addEventListener('DOMContentLoaded', () => {
     let buttonCalcular = document.getElementById('calcular');
     let buttonLimpar = document.getElementById('limpar');
@@ -10,18 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function calculo(e) {
-    e.preventDefault(); // Previne o refresh da página
+    e.preventDefault();
 
-    // Obtém os valores dos campos de entrada
+    
     let num1 = parseFloat(document.getElementById('num1').value);
     let num2 = parseFloat(document.getElementById('num2').value);
     let num3 = parseFloat(document.getElementById('num3').value);
 
-    // Calcula o delta
+    
     let delta = Math.pow(num2, 2) - 4 * num1 * num3;
-    console.log(`O delta é: ${delta}`); // Usado para debug, pode remover em produção
+    console.log(`O delta é: ${delta}`);
 
-    // Verifica e exibe as raízes
     if (delta > 0) {
         let raiz1 = (-num2 + Math.sqrt(delta)) / (2 * num1);
         let raiz2 = (-num2 - Math.sqrt(delta)) / (2 * num1);
@@ -35,7 +33,6 @@ function calculo(e) {
 }
 
 function limpar(e) {
-    // Limpa os campos e o resultado
     document.getElementById('num1').value = '';
     document.getElementById('num2').value = '';
     document.getElementById('num3').value = '';
