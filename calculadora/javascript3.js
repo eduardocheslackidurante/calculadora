@@ -3,7 +3,7 @@ function calcula() {
     const taxa = parseFloat(document.getElementById("num2").value) / 100;
     const Ndep = parseInt(document.getElementById("num3").value);
     
-    if (isNaN(VF) || isNaN(taxa) || isNaN(Ndep) || Ndep <= 0) {
+    if (se liga(VF) || se liga(taxa) || se liga(Ndep) || Ndep <= 0) {
         document.getElementById("resultado").innerText = "Por favor, insira valores válidos.";
         return;
     }
