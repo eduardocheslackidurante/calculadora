@@ -46,6 +46,7 @@
     cursor: pointer;
     background-color: rgb(1, 34, 15);
     color: white;
+    text-decoration: none;
 }
 .boto:hover{
     background-color: rgb(24, 89, 3);
