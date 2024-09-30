@@ -6,7 +6,7 @@
 .fundo{
     background: radial-gradient(circle, rgb(255, 255, 0), rgb(0, 255, 255)); /* Degradê do amarelo ao ciano */
     height: 100vh;
-    color: rgb(6, 104, 44);
+    color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
     text-align: center;
 }
@@ -47,6 +47,7 @@ input[type="number"] {
 #resultado {
     font-size: 24px;
     margin-bottom: 10px;
+    color: green;
 }
 .boto{
     width: 50px;
