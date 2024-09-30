@@ -4,7 +4,7 @@ function calcula() {
     const Ndep = parseInt(document.getElementById("num3").value);
     
     if (isNaN(VF) || isNaN(taxa) || isNaN(Ndep) || Ndep <= 0) {
-        document.getElementById("resultado").innerText = "Erro";
+        document.getElementById("resultado").innerText = "Erro: Digite Um Número";
         return;
     }
 
@@ -23,3 +23,4 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("calcular").addEventListener("click", calcula);
     document.getElementById("limpar").addEventListener("click", limpar);
 });
+
