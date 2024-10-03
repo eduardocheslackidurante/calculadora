@@ -36,8 +36,8 @@
     background-color: beige;
     margin: 5px;
     text-align: left;
-    font-size: 25px;
-    color: black;
+    font-size: 25px; 
+    color: rgb(0, 0, 0);
 }
 .boto{
     width: 50px;
