@@ -9,7 +9,7 @@ function calcula() {
         document.getElementById("resultado").innerText = "Erro: Digite Um Número";
         return;
     }
-//p = valor que será exibido
+//p = valor final da parcela
     const p = (VF * taxa * Math.pow(1 + taxa, Ndep)) / (Math.pow(1 + taxa, Ndep) - 1);
     document.getElementById("resultado").innerText = `Valor da Parcela: R$ ${p.toFixed(2)}`;
 }
