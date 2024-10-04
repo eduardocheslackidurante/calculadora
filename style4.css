@@ -126,3 +126,13 @@ h2 {
 p {
     line-height: 1.6; /* Altura da linha para melhor legibilidade */
 }
+.caixo {
+    position: relative;
+}
+.imagem-canto-direito {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    width: 100px; /* ajuste o tamanho conforme necessário */
+    height: auto; /* mantém a proporção da imagem */
+}

@@ -78,3 +78,13 @@
     transform: translateY(0); /* Retorna à posição original ao clicar */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reduzida ao clicar */
 }
+.caixo {
+    position: relative;
+}
+.imagem-canto-direito {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    width: 100px; /* ajuste o tamanho conforme necessário */
+    height: auto; /* mantém a proporção da imagem */
+}
