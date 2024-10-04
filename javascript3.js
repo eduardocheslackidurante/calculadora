@@ -21,7 +21,7 @@ function limpar() {
     document.getElementById("num3").value = '';
     document.getElementById("resultado").innerText = '';
 }
-
+//executa novamente a função específica de cada botão quando clicado
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("calcular").addEventListener("click", calcula);
     document.getElementById("limpar").addEventListener("click", limpar);
