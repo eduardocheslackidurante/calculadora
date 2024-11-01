@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja de Tênis Criativos. Encontre os melhores tênis com estilo. Todos os direitos reservados.">
+    <title>Produto</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styleproduto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <header>
+        
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="imagens/Logo.png"class="altlogo" alt="LOGO">
+            </div>
+    
+    </header>
+
+    <main>
+        
+        <div class="produto-detalhes">
+            <div class="produto-imagem">
+                <img src="imagens/tenis1.png" alt="Imagem do Produto">
+            </div>
+            <div class="produto-descricao">
+                <h2>Tênis de Vôlei</h2>
+                <p><strong>Descrição:</strong> Este tênis esportivo é ideal para corredores e entusiastas de atividades ao ar livre. Com design ergonômico e material respirável, ele oferece conforto e durabilidade, mesmo em treinos intensos.</p>
+                <ul class="produto-caracteristicas">
+                    <li><strong>Material:</strong> Malha respirável e sola de borracha.</li>
+                    <li><strong>Cor:</strong> Preto com detalhes em laranja.</li>
+                    <li><strong>Tamanhos disponíveis:</strong> 38, 39, 40, 41, 42, 43.</li>
+                    <li><strong>Indicação:</strong> Corrida, caminhadas e academia.</li>
+                </ul>
+                <p><strong>Especificações técnicas:</strong></p>
+                <ul class="produto-especificacoes">
+                    <li><strong>Peso:</strong> 250g.</li>
+                    <li><strong>Altura da sola:</strong> 3cm.</li>
+                    <li><strong>Amortecimento:</strong> Gel integrado na sola.</li>
+                    <li><strong>Resistência à água:</strong> Sim.</li>
+                </ul>
+                <p class="produto-preco" data-name="Produto" data-price="299,90"><strong>Preço:</strong> R$399.90</p>
+                <button onclick="addToCart('USE 0756 Rosa / 33', 399.90)" class="produto-comprar-btn">Adicionar ao Carrinho</button>
+                <button class="produto-comprar-btn" id="personalizar-btn">Personalizar</button>
+                <a href="index.html" class="produto-comprar-btn">Retornar</a>
+            </div>
+        </div>
+        
+<!-- Modal Personalizar -->
+<div id="personalizar-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Personalize seu produto</h2>
+        <label for="custom-text">Texto personalizado:</label>
+        <textarea class="inptper" id="custom-text" placeholder="Digite como quer seu tenis..." rows="10"></textarea>
+        <button id="confirm-custom">Confirmar</button>
+    </div>
+    <script src="produto.js"></script>
+</div>
+
+    </main>     
+               <footer>
+                <div id="footer_content">
+                    <div id="footer_contacts">
+                        <img class="Logo" src="imagens/Logo.png" alt="logo">
+                        <p>Pensado por você, feito por nós.</p>
+        
+                        <div id="footer_social_media">
+                            <a href="#" class="footer-link" id="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+        
+                            <a href="#" class="footer-link" id="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+        
+                            <a href="#" class="footer-link" id="whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="footer_subscribe">
+                        <h3>Informações</h3>
+        
+                        <p>
+                            Digite seu e-mail para ser notificado sobre
+                            nossas novidades e descontos.
+                        </p>
+        
+                        <div id="input_group">
+                            <input type="email" id="email">
+                            <button>
+                                <i class="fa-regular fa-envelope"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="apipmap">
+                        <h3>Bairro Centro, Rua Santos Dumont, 257</h3>
+                        <iframe class="apimaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.3741769871694!2d-49.52070792460963!3d-25.459178277543167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd19d23ac946db%3A0x2ceb2af6e3e04ff9!2sR.%20Santos%20Dumont%2C%20257%20-%20Vila%20Bancaria%2C%20Campo%20Largo%20-%20PR%2C%2083601-090!5e0!3m2!1spt-BR!2sbr!4v1730124156771!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div>
+                        <img class="logo2" src="imagens/SmartGeeks.png" alt="logo2">
+                    </div>
+                </div>
+                
+        
+                <div id="footer_copyright">
+                    &copy; 2024 Sempre a sua disposição.
+                </div>
+            </footer>
+</body>
+
+</html>
