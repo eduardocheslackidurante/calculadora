@@ -1,0 +1,153 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e cores principais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradiente de fundo */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Principal */
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(0);
+}
+
+/* Lado Esquerdo */
+.left-side {
+    width: 40%;
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #0072ff;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    background-color: #00448a;
+    transform: translateY(0);
+}
+
+/* Lado Direito */
+.right-side {
+    width: 60%;
+    background-image: url('background-image.jpg'); /* Substitua com sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+main h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+main p {
+    font-size: 18px;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Efeitos de Animação */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        height: auto;
+    }
+
+    .buttons {
+        width: 80%;
+    }
+
+    main h1 {
+        font-size: 30px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+}

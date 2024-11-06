@@ -1,0 +1,155 @@
+/* Resetando o estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradiente de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container do formulário de login */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Estilo do título */
+h2 {
+    font-size: 28px;
+    color: #0277bd;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo */
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilo do grupo de inputs */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilo dos inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #0277bd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+}
+
+/* Estilo do botão de submit */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0277bd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito hover para o botão */
+button:hover {
+    background-color: #01579b;
+}
+
+/* Links no rodapé */
+.footer-links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #0277bd;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 120px; /* Altura fixa do header */
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li {
+    font-size: 1.1em;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #1e90ff;
+}
+.contact-btn {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.contact-btn:hover {
+    background-color: #1c86ee;
+}
+.hero-section {
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.hero-section p {
+    font-size: 1.2em;
+    color: #555;
+}
+.imagem-canto-direito {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 100px; /* ajuste o tamanho conforme necessário */
+    height: auto; /* mantém a proporção da imagem */
+}
