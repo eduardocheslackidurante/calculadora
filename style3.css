@@ -96,3 +96,7 @@ input[type="number"] {
     width: 100px; /* ajuste o tamanho conforme necessário */
     height: auto; /* mantém a proporção da imagem */
 }
+
+.resultadoTabela{
+    color: #0072ff;
+}

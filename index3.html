@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,40 +17,39 @@
         </div>
         <div class="calculadora">
             <p id="resultado"></p>
-            <table>
-                <form action="">
-                    <div class="campos">
-                        <input type="number" name="num1" id="num1" placeholder="Valor Financiado" required>
-                    </div>
-                    <div class="campos">
-                        <input type="number" name="num2" id="num2" placeholder="Taxa de Juros" required>
-                    </div>
-                    <div class="campos">
-                        <input type="number" name="num3" id="num3" placeholder="Número de Parcelas" required>
-                    </div>
-                    <div class="buttons">
-                        <button type="button" id="calcular">Calcular</button>
-                        <button type="button" id="limpar">Limpar</button>
-                    </div>
-                </form>
-        <!-- TABELA -->
-        <div>
-            <table>
-                <thead>
-                    <th>
-                        <tr>TOTAL</tr>
-                        <tr>VALOR EM R$</tr>
-                    </th>
-                </thead>
-                <tbody>
-                    <tr>757853</tr>
-                </tbody>
-            </table>
-        </div>
+            <form>
+                <!-- Entradas do Formulário -->
+                <div class="campos">
+                    <input type="number" name="num1" id="num1" placeholder="Valor Financiado (R$)" required>
+                </div>
+                <div class="campos">
+                    <input type="number" name="num2" id="num2" placeholder="Taxa de Juros (%)" required>
+                </div>
+                <div class="campos">
+                    <input type="number" name="num3" id="num3" placeholder="Número de Parcelas" required>
+                </div>
+                <div class="buttons">
+                    <button type="button" id="calcular">Calcular</button>
+                    <button type="button" id="limpar">Limpar</button>
+                </div>
+            </form>
+
+            <!-- Tabela de Resultados -->
+            <div id="resultadoTabela" style="display:none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Total a Pagar (R$)</th>
+                            <th>Valor por Parcela (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="total"></td>
+                            <td id="parcelas"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-</body>
-</html>
-
-    <!-- volta na calculadora normal -->
-      <!-- vai no como funciona -->

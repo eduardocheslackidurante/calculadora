@@ -1,29 +1,31 @@
-//VF = valor financiado
-//Ndep = numero de parcelas
-function calcula() {
-    const VF = parseFloat(document.getElementById("num1").value);
-    const taxa = parseFloat(document.getElementById("num2").value) / 100;
-    const Ndep = parseInt(document.getElementById("num3").value);
-    
-    if (isNaN(VF) || isNaN(taxa) || isNaN(Ndep) || Ndep <= 0) {
-        document.getElementById("resultado").innerText = "Erro: Digite Um Número";
+document.getElementById('calcular').addEventListener('click', function() {
+    const valorFinanciado = parseFloat(document.getElementById('num1').value);
+    const taxaJuros = parseFloat(document.getElementById('num2').value);
+    const numParcelas = parseInt(document.getElementById('num3').value);
+
+    // Verificação se os campos não estão vazios
+    if (!valorFinanciado || !taxaJuros || !numParcelas) {
+        alert("Por favor, preencha todos os campos.");
         return;
     }
-//p = valor final da parcela
-    const p = (VF * taxa * Math.pow(1 + taxa, Ndep)) / (Math.pow(1 + taxa, Ndep) - 1);
-    document.getElementById("resultado").innerText = `Valor da Parcela: R$ ${p.toFixed(2)}`;
-}
 
-//substitui o texto pelo que está dentro das aspas abaixo quando o botao de limpar é clicado
-function limpar() {
-    document.getElementById("num1").value = '';
-    document.getElementById("num2").value = '';
-    document.getElementById("num3").value = '';
-    document.getElementById("resultado").innerText = '';
-}
-//executa novamente a função específica de cada botão quando clicado
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("calcular").addEventListener("click", calcula);
-    document.getElementById("limpar").addEventListener("click", limpar);
+    // Cálculo do valor total com juros compostos
+    const montante = valorFinanciado * Math.pow(1 + (taxaJuros / 100), numParcelas);
+    const parcela = montante / numParcelas;
+
+    // Atualizando a tabela com os resultados
+    document.getElementById('total').textContent = `R$ ${montante.toFixed(2)}`;
+    document.getElementById('parcelas').textContent = `R$ ${parcela.toFixed(2)}`;
+
+    // Exibindo a tabela
+    document.getElementById('resultadoTabela').style.display = 'block'; // Alterei para 'block' para garantir que a tabela apareça.
+});
+
+// Função para limpar os campos
+document.getElementById('limpar').addEventListener('click', function() {
+    document.getElementById('num1').value = '';
+    document.getElementById('num2').value = '';
+    document.getElementById('num3').value = '';
+    document.getElementById('resultadoTabela').style.display = 'none';
 });
 
