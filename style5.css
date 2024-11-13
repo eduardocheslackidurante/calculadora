@@ -8,7 +8,7 @@
 /* Fonte e cores principais */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradiente de fundo */
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente suave */
     color: #333;
     display: flex;
     justify-content: center;

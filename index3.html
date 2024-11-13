@@ -35,21 +35,27 @@
             </form>
 
             <!-- Tabela de Resultados -->
-            <div id="resultadoTabela" style="display:none;">
+            <div class="resultadoTabela" id="resultadoTabela" style="display: none;">
                 <table>
-                    <thead>
-                        <tr>
-                            <th>Total a Pagar (R$)</th>
-                            <th>Valor por Parcela (R$)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="total"></td>
-                            <td id="parcelas"></td>
-                        </tr>
-                    </tbody>
+                    <tr>
+                        <th>Informação</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td id="total"></td>
+                    </tr>
+                    <tr>
+                        <td>Valor das Parcelas</td>
+                        <td id="parcelas"></td>
+                    </tr>
+                    <tr>
+                        <td>Juros</td> <!-- Agora exibe Juros -->
+                        <td id="juros"></td> <!-- ID para exibir os juros -->
+                    </tr>
                 </table>
             </div>
         </div>
     </div>
+            
+            

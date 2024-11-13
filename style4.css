@@ -6,7 +6,7 @@
 
 /* Estilização do fundo da página */
 .fundo {
-    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradiente de fundo */
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente de fundo */
     height: 180vh; /* Altura da página maior que a viewport para permitir rolagem */
     color: rgb(0, 0, 0); /* Cor do texto */
     font-family: Arial, sans-serif; /* Fonte utilizada na página */
@@ -95,7 +95,7 @@ input[type="number"] {
 
 /* Estilização da manchete */
 .manchete {
-    border-bottom: 2px solid #5bffb2; /* Borda inferior verde */
+    border-bottom: 2px solid #6a11cb; /* Borda inferior verde */
     padding: 10px 0; /* Espaçamento acima e abaixo do texto */
     margin-bottom: 20px; /* Margem inferior da manchete */
 }
@@ -106,7 +106,7 @@ input[type="number"] {
     border-radius: 8px; /* Bordas arredondadas */
     margin-bottom: 20px; /* Espaçamento entre os artigos */
     padding: 15px; /* Espaçamento interno do artigo */
-    background-color: white; /* Cor de fundo do artigo */
+    background-color: rgb(207, 207, 207); /* Cor de fundo do artigo */
 }
 
 /* Estilização do título principal */

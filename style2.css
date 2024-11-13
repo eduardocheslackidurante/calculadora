@@ -6,7 +6,7 @@
 
 /* Estilização do fundo da página */
 .fundo {
-    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradiente de fundo */
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente suave */
     height: 100vh; /* Altura da página igual à altura da viewport */
     color: rgb(0, 0, 0); /* Cor do texto */
     font-family: Arial, sans-serif; /* Fonte utilizada na página */
@@ -16,12 +16,16 @@
 /* Estilização da caixa da calculadora */
 .calculadora {
     position: absolute; /* Permite posicionamento absoluto em relação ao contêiner pai */
-    background-color: black; /* Cor de fundo da calculadora */
     top: 50%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta a posição para centralizar completamente */
-    border-radius: 15px; /* Bordas arredondadas */
-    padding: 15px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo com leve transparência */
+    padding: 30px;
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
 }
 
 /* Margem inferior para campos e botões */
@@ -39,24 +43,30 @@ input[type="number"] {
 
 /* Estilização dos botões para calcular e limpar */
 .buttons button {
-    font-size: 18px; /* Tamanho da fonte do botão */
-    padding: 10px; /* Espaçamento interno do botão */
-    border: none; /* Sem borda */
-    border-radius: 4px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    background-color: #6a11cb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px; /* Bordas arredondadas para botões */
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    width: 100px;
 }
-
 /* Estilização do botão ao passar o mouse */
 .buttons button:hover {
-    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+    background-color: #2575fc;
+    transform: scale(1.05); /* Efeito de aumento suave */
 }
 
 /* Estilização do texto do resultado */
 #resultado {
-    font-size: 24px; /* Tamanho da fonte do resultado */
-    margin-bottom: 10px; /* Margem inferior do resultado */
-    color: lightgreen; /* Cor do texto do resultado */
+    font-size: 24px; /* Aumentei o tamanho da fonte para 32px */
+    color: #000000;
+    font-weight: bold;
 }
+
 
 /* Estilização dos botões que levam a outras páginas */
 .boto {

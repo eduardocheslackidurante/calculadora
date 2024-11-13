@@ -8,7 +8,7 @@
 /* Estilo para o body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradiente de fundo */
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente de fundo */
     display: flex;
     justify-content: center;
     align-items: center;
