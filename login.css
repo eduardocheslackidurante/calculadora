@@ -7,14 +7,24 @@
 
 /* Estilo para o body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente de fundo */
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente suave */
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
 /* Container do formulário de login */
 .login-container {
     background-color: #ffffff;
@@ -36,7 +46,7 @@ h2 {
 /* Subtítulo */
 p {
     font-size: 16px;
-    color: #555;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
@@ -120,17 +130,26 @@ header {
 .nav-links a:hover {
     color: #1e90ff;
 }
-.contact-btn {
-    background-color: #1e90ff;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+.boto {
+    background-color: #00b7ff; /* Cor de fundo dos botões */
+    color: #000000; /* Cor do texto dos botões */
+    padding: 12px 24px; /* Espaçamento interno (vertical e horizontal) */
+    border: none; /* Sem borda */
+    border-radius: 25px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s ease, transform 0.2s; /* Transições suaves para cor e transformação */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra dos botões */
+    text-decoration: none; /* Sem decoração de texto */
+    margin-top: 5px; /* Margem superior do botão */
+    display: inline-block; /* Permite aplicar a margem corretamente */
 }
-.contact-btn:hover {
-    background-color: #1c86ee;
+
+/* Estilização do botão ao passar o mouse */
+.boto:hover {
+    background-color: rgb(0, 100, 158); /* Cor ao passar o mouse */
+    transform: translateY(-2px); /* Elevação do botão ao passar o mouse */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
 }
 .hero-section {
     margin-top: 100px;
@@ -152,4 +171,29 @@ header {
     left: 20px;
     width: 100px; /* ajuste o tamanho conforme necessário */
     height: auto; /* mantém a proporção da imagem */
+}
+/* Rodapé */
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        height: auto;
+    }
+
+    .buttons {
+        width: 80%;
+    }
+
+    main h1 {
+        font-size: 30px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
 }

@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente suave */
   margin: 0;
   padding: 0;
 }
@@ -50,13 +50,13 @@ button:hover {
   margin-top: 20px;
   padding: 10px;
   background-color: #e7f3e7;
-  border: 1px solid #4CAF50;
-  color: #4CAF50;
+  border: 1px solid #1215ea;
+  background-color: #484aec;
   font-weight: bold;
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #484aec;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -68,7 +68,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #1215ea;
 }
 
 button:last-of-type {
@@ -77,5 +77,26 @@ button:last-of-type {
 
 button:last-of-type:hover {
   background-color: #d73833;
+}
+.boto {
+  background-color: #00b7ff; /* Cor de fundo dos botões */
+  color: #000000; /* Cor do texto dos botões */
+  padding: 12px 24px; /* Espaçamento interno (vertical e horizontal) */
+  border: none; /* Sem borda */
+  border-radius: 25px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte dos botões */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.3s ease, transform 0.2s; /* Transições suaves para cor e transformação */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra dos botões */
+  text-decoration: none; /* Sem decoração de texto */
+  margin-top: 5px; /* Margem superior do botão */
+  display: inline-block; /* Permite aplicar a margem corretamente */
+}
+
+/* Estilização do botão ao passar o mouse */
+.boto:hover {
+  background-color: rgb(0, 100, 158); /* Cor ao passar o mouse */
+  transform: translateY(-2px); /* Elevação do botão ao passar o mouse */
+  color: #ffffff; /* Cor do texto ao passar o mouse */
 }
 
