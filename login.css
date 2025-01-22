@@ -16,14 +16,15 @@ body {
     height: 100vh;
 }
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #333;
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     font-size: 14px;
+    top: 666px;
 }
 /* Container do formulário de login */
 .login-container {
@@ -173,6 +174,9 @@ header {
     height: auto; /* mantém a proporção da imagem */
 }
 /* Rodapé */
+.bebe{
+    margin-top: 30px;
+}
 /* Responsividade */
 @media (max-width: 768px) {
     .container {
