@@ -7,7 +7,7 @@
 /* Estilização do fundo da página */
 .fundo {
     background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradiente de fundo */
-    height: 180vh; /* Altura da página maior que a viewport para permitir rolagem */
+    height: 100vh; /* Altura da página maior que a viewport para permitir rolagem */
     color: rgb(0, 0, 0); /* Cor do texto */
     font-family: Arial, sans-serif; /* Fonte utilizada na página */
     text-align: center; /* Centraliza o texto */
